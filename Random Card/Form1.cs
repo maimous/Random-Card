@@ -12,6 +12,8 @@ namespace Random_Card
 {
     public partial class Form1 : Form
     {
+        Random random = new Random();
+
         public Form1()
         {
             InitializeComponent();
@@ -20,6 +22,13 @@ namespace Random_Card
         private void Form1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Card card = new Card((Suits)random.Next(4), (Values)random.Next(1, 14));
+            //MessageBox.Show(card.Name);
+            outputLabel.Text = card.Name;
         }
     }
 }

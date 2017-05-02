@@ -13,3 +13,7 @@
 ## 02 Add the Card class and the Suits and Values enums
 * It has two public properties: Suit (which will be Spades, Clubs, Diamonds, or Hearts) and Value (Ace, Two, Three…Ten, Jack, Queen, King) and a read-only property, Name (Ace of Spades, Five of Diamonds).
 * Add the Suits and Values enums.
+
+&nbsp;
+## 03 Add the button code for a random card name popup
+* We use the overloaded Random.Next() method to generate a random number that we cast to the enums.
